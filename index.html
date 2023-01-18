@@ -434,7 +434,7 @@
     let zero = '0';	   
     let minus = '3';	   
    
-    mySliderAllSlides.innerHTML = zero + (myImageSlider.slides.length);
+    mySliderAllSlides.innerHTML = zero + (myImageSlider.slides.length - minus);
     myImageSlider.on('slideChange', function () {
         let currentSlide = ++myImageSlider.realIndex;
         mySliderCurrentSlide.innerHTML = zero + currentSlide;
