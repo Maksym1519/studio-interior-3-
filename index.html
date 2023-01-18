@@ -431,11 +431,12 @@
    <script>
     let mySliderAllSlides = document.querySelector('.image-slider_total');
     let mySliderCurrentSlide = document.querySelector('.image-slider_current');
+    let zero = '0';	   
    
     mySliderAllSlides.innerHTML = myImageSlider.slides.length;
     myImageSlider.on('slideChange', function () {
         let currentSlide = ++myImageSlider.realIndex;
-        mySliderCurrentSlide.innerHTML = currentSlide;
+        mySliderCurrentSlide.innerHTML = zero + currentSlide;
     })
    </script>
    
