@@ -432,8 +432,9 @@
     let mySliderAllSlides = document.querySelector('.image-slider_total');
     let mySliderCurrentSlide = document.querySelector('.image-slider_current');
     let zero = '0';	   
+    let minus = '3';	   
    
-    mySliderAllSlides.innerHTML = myImageSlider.slides.length;
+    mySliderAllSlides.innerHTML = zero + (myImageSlider.slides.length);
     myImageSlider.on('slideChange', function () {
         let currentSlide = ++myImageSlider.realIndex;
         mySliderCurrentSlide.innerHTML = zero + currentSlide;
